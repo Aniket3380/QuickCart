@@ -1,0 +1,180 @@
+/* Wrapper */
+.pm-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Backdrop */
+.pm-backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+}
+
+/* Dialog */
+.pm-dialog {
+    position: relative;
+    z-index: 10;
+    width: 450px;
+    max-width: 95%;
+    border-radius: 14px;
+    background-color: #ffffff;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    padding: 1rem 1.2rem;
+    animation: fadeIn 0.25s ease-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-15px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Header */
+.pm-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 0.3rem;
+}
+
+.pm-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.pm-close {
+    border: none;
+    background: transparent;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.2s;
+}
+
+.pm-close:hover {
+    color: #e74c3c;
+}
+
+/* Form Fields */
+.pm-form label {
+    font-size: 0.82rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    display: block;
+    color: #555;
+}
+
+.pm-form input,
+.pm-form select,
+.pm-form textarea {
+    width: 100%;
+    font-size: 0.82rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+.pm-form input,
+.pm-form select {
+    height: 28px;
+}
+
+.pm-form textarea {
+    height: 60px;
+    resize: vertical;
+}
+
+/* Focus & premium colors */
+.pm-form input:focus,
+.pm-form select:focus,
+.pm-form textarea:focus {
+    border-color: #5a67f2;
+    /* premium indigo */
+    box-shadow: 0 0 6px rgba(90, 103, 242, 0.4);
+    outline: none;
+}
+
+/* Row layout */
+.pm-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.pm-col {
+    flex: 1;
+}
+
+/* Buttons */
+.pm-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 0.6rem;
+}
+
+.pm-btn-cancel {
+    background: #e0e0e0;
+    color: #1a1a1a;
+    border: none;
+    padding: 0.3rem 0.65rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.82rem;
+    transition: all 0.2s;
+}
+
+.pm-btn-cancel:hover {
+    background: #cfcfcf;
+}
+
+.pm-btn-submit {
+    background: linear-gradient(90deg, #5a67f2, #4c51bf);
+    /* premium gradient */
+    color: #fff;
+    border: none;
+    padding: 0.3rem 0.65rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.82rem;
+    transition: all 0.2s;
+}
+
+.pm-btn-submit:hover {
+    background: linear-gradient(90deg, #4c51bf, #434190);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .pm-dialog {
+        width: 90%;
+        padding: 0.8rem 1rem;
+    }
+
+    .pm-row {
+        flex-direction: column;
+    }
+}

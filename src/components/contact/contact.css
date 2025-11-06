@@ -1,0 +1,72 @@
+/* Hero Section */
+.contact-hero {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contact Info Section */
+.contact-info-section {
+    position: relative;
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+/* Decorative Circles */
+.decor-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+}
+.decor-circle-1 {
+    width: 120px;
+    height: 120px;
+    background: #2563eb;
+    top: 10%;
+    left: 5%;
+}
+.decor-circle-2 {
+    width: 80px;
+    height: 80px;
+    background: #4f46e5;
+    bottom: 15%;
+    right: 10%;
+}
+.decor-circle-3 {
+    width: 100px;
+    height: 100px;
+    background: #2563eb;
+    bottom: 30%;
+    left: 20%;
+}
+
+/* Contact Cards */
+.contact-card {
+    border-radius: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    background: linear-gradient(145deg, #ffffff, #f1f5f9);
+}
+.contact-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(145deg, #e0e7ff, #fef3c7);
+}
+
+/* Icon Circle */
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+/* Icon Background Colors */
+.icon-circle.bg-primary { background: #2563eb; color: white; }
+.icon-circle.bg-success { background: #16a34a; color: white; }
+.icon-circle.bg-danger  { background: #dc2626; color: white; }

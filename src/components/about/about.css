@@ -1,0 +1,51 @@
+/* Hero Section */
+.about-hero {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cards */
+.about-card {
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Circle */
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+/* Team Cards */
+.team-card {
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Team Images */
+.team-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
