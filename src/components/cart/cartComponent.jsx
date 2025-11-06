@@ -125,7 +125,7 @@ const Cart = () => {
 
         try {
             const res = await axios.post(
-                "${BASE_URL}/api/orders/place-order",
+                `${BASE_URL}/api/orders/place-order`,
                 payload,
                 { headers: { Authorization: `Bearer ${token}` } }
             );
